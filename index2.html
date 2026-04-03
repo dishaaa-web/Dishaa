@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Girlies Aesthetic Store</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+    background: #fff0f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #ffb6c1;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+.icon i {
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero (UPDATED aesthetic model background) */
+.hero {
+    background: url('C:/Users/medis/OneDrive/Desktop/website/bb2.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero h1 {
+    background: rgba(0,0,0,0.5);
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+/* Cards */
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.btn-custom {
+    background: #ff69b4;
+    color: white;
+}
+.btn-custom:hover {
+    background: #ff1493;
+}
+
+/* Cart */
+.cart-box {
+    position: fixed;
+    right: 20px;
+    top: 90px;
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+/* Footer */
+footer {
+    background: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="#">Girlies Store 💖</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+
+<div class="icon ms-3">
+<i class="bi bi-search"></i>
+<i class="bi bi-heart"></i>
+<i class="bi bi-cart"></i>
+<i class="bi bi-person"></i>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+<h1>✨ Aesthetic Fashion for Girlies ✨</h1>
+</div>
+
+<!-- Shop -->
+<section id="shop">
+<div class="container">
+<h2 class="text-center mb-4">Shop Collection</h2>
+
+<div class="row g-4">
+
+<!-- Tshirt -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b">
+<div class="card-body text-center">
+<h5>Tshirts</h5>
+<p>₹800</p>
+<button class="btn btn-custom" onclick="addToCart(800)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Necklace -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d">
+<div class="card-body text-center">
+<h5>Necklace</h5>
+<p>₹500</p>
+<button class="btn btn-custom" onclick="addToCart(500)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Handbag -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+<div class="card-body text-center">
+<h5>Handbag</h5>
+<p>₹1200</p>
+<button class="btn btn-custom" onclick="addToCart(1200)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Boots (FIXED IMAGE) -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="C:\Users\medis\OneDrive\Desktop\website\girls-knee-high-boots.jpg">
+<div class="card-body text-center">
+<h5>Boots</h5>
+<p>₹1500</p>
+<button class="btn btn-custom" onclick="addToCart(1500)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Ring -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="C:\Users\medis\OneDrive\Desktop\website\ring.jpg">
+<div class="card-body text-center">
+<h5>Ring</h5>
+<p>₹300</p>
+<button class="btn btn-custom" onclick="addToCart(300)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Jeans (NEW) -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="C:\Users\medis\OneDrive\Desktop\website\jeansgirls.jpg">
+<div class="card-body text-center">
+<h5>Jeans</h5>
+<p>₹1100</p>
+<button class="btn btn-custom" onclick="addToCart(1100)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Vintage Jacket (NEW) -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="C:\Users\medis\OneDrive\Desktop\website\jacket.jpg">
+<div class="card-body text-center">
+<h5>Vintage Jacket</h5>
+<p>₹1800</p>
+<button class="btn btn-custom" onclick="addToCart(1800)">Add</button>
+</div>
+</div>
+</div>
+
+<!-- Midi Dress (NEW) -->
+<div class="col-md-3">
+<div class="card shadow">
+<img src="C:\Users\medis\OneDrive\Desktop\website\Dress_With_Floral_.webp">
+<div class="card-body text-center">
+<h5>Midi Dress</h5>
+<p>₹1400</p>
+<button class="btn btn-custom" onclick="addToCart(1400)">Add</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Cart -->
+<div class="cart-box">
+<h5>🛒 Cart Total</h5>
+<p id="total">₹0</p>
+<button class="btn btn-danger w-100" onclick="clearCart()">Clear</button>
+</div>
+
+<!-- About -->
+<section id="about">
+<div class="container text-center">
+<h2>About Us 💖</h2>
+<p>
+Welcome to Girlies Store! We offer trendy aesthetic fashion including clothes,
+jewelry, bags, boots, jackets, and dresses designed for modern girls.
+</p>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<div class="container text-center">
+<h2>Contact Us 📞</h2>
+<p>Email: girliesstore@gmail.com</p>
+<p>Phone: +91 98765 43210</p>
+<p>Location: Pune, India</p>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Girlies Store 💖 | All Rights Reserved</p>
+</footer>
+
+<!-- JS -->
+<script>
+let total = 0;
+
+function addToCart(price) {
+    total += price;
+    document.getElementById("total").innerText = "₹" + total;
+}
+
+function clearCart() {
+    total = 0;
+    document.getElementById("total").innerText = "₹0";
+}
+</script>
+
+</body>
+</html>
